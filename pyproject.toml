@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "notouchie"
+version = "0.1.0"
+description = "A tiny tool for not picking your face"
+authors = ["Erik Bjäreholt <erik@bjareho.lt>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+notouchie = "notouchie.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "^4.8.0.76"
+mediapipe = "^0.10.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
